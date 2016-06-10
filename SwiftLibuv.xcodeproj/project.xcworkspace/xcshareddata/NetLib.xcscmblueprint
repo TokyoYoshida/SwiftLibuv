@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C274ABCCABABC9F55ED329880DD113121DABD8E6" : 0,
+    "15695A206956A34471C9E6F122DA49014B7F8965" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D462395B-0F18-435D-BD85-DE5E8C7EDB2B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C274ABCCABABC9F55ED329880DD113121DABD8E6" : "NetLib\/Packages\/POSIXRegex-0.1.0\/",
+    "15695A206956A34471C9E6F122DA49014B7F8965" : "NetLib\/Packages\/libCuv-1.0.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NetLib",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NetLib.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bontoJR\/libCuv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "15695A206956A34471C9E6F122DA49014B7F8965"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/POSIXRegex.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C274ABCCABABC9F55ED329880DD113121DABD8E6"
+    }
+  ]
+}
