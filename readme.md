@@ -1,6 +1,6 @@
 ## SwiftLibuv
 
-Swiftlibuv in the library for calling Libuv from Swift language, you can call the TCP network functions of Libuv. It also provides a simple framework of Web applications that use these libraries.
+Swiftlibuv is the library for calling Libuv from Swift language, you can call the TCP network functions of Libuv. It also provides a simple framework of Web applications that use these libraries.
 
 ## Build exsample application
 

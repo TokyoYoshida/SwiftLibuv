@@ -1,12 +1,12 @@
 public enum Result<A> {
     case success(value: A)
-    case error(error: SwiftLibuvError)
+    case error(error: ErrorProtocol)
     
     init(value: A){
         self = .success(value: value)
     }
 
-    init(error: SwiftLibuvError){
+    init(error: ErrorProtocol){
         self = .error(error: error)
     }
 }

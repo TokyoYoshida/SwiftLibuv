@@ -6,10 +6,11 @@ import Cuv
 import HTTPParser
 
 class WebFrameWork {
-    let loop =         uv_default_loop()
-    let router =       Router()
-    let httpServer:    HttpServable
-    let errorCallBack: ErrorCallBack
+    private let loop =         uv_default_loop()
+    private let router =       Router()
+    private let httpServer:    HttpServable
+    private let errorCallBack: ErrorCallBack
+
     init(errorCallBack: ErrorCallBack) {
         self.errorCallBack = errorCallBack
         let socket =      TcpSocket()

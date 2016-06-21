@@ -1,17 +1,20 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9912B097CDAD89D44F1D0900EDE58C590208D40D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "8D2296B3978D73F29F92A5319CC4250CE078B90B" : 0,
+    "57932305D7AF3390B1D4C8A3D4D1FCFFE771843F" : 0,
     "15695A206956A34471C9E6F122DA49014B7F8965" : 0,
-    "57932305D7AF3390B1D4C8A3D4D1FCFFE771843F" : 0
+    "9912B097CDAD89D44F1D0900EDE58C590208D40D" : 0,
+    "8D2296B3978D73F29F92A5319CC4250CE078B90B" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8363F455-3809-4B3D-929D-403D14BFFCC8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "8D2296B3978D73F29F92A5319CC4250CE078B90B" : "SwiftLibuv\/Packages\/C7-0.5.0\/",
+    "57932305D7AF3390B1D4C8A3D4D1FCFFE771843F" : "NetLib\/Packages\/HTTPParser-0.5.0\/",
     "15695A206956A34471C9E6F122DA49014B7F8965" : "NetLib\/Packages\/libCuv-1.0.0\/",
-    "57932305D7AF3390B1D4C8A3D4D1FCFFE771843F" : "NetLib\/Packages\/HTTPParser-0.5.0\/"
+    "9912B097CDAD89D44F1D0900EDE58C590208D40D" : "SwiftLibuv\/",
+    "8D2296B3978D73F29F92A5319CC4250CE078B90B" : "SwiftLibuv\/Packages\/C7-0.5.0\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftLibuv",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -31,6 +34,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/open-swift\/C7.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D2296B3978D73F29F92A5319CC4250CE078B90B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/TokyoYoshida\/SwiftLibuv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9912B097CDAD89D44F1D0900EDE58C590208D40D"
     }
   ]
 }

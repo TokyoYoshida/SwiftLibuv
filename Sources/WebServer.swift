@@ -8,10 +8,17 @@ import HTTPParser
 class MyResponder : Responder {
     override func respond() {
         get(uri: URI(byPath:"/index")) {request in
-            print("stab")
             return Response(body: Data("this is test"))
         }
-    }
+
+        get(uri: URI(byPath:"/cookie")) {request in
+            print(request.headers["Cookie"].values)
+//            let cookieValue = request.headers["Cookie"].values ?? ""
+            var response = Response(body: Data("cookie value"))
+            response.headers["Set-Cookie"] = "test=ok"//Header(response.cookies.map { "\($0)=\($1)" }.joined(separator: ";"))
+            return response
+        }
+}
 }
 
 func exampleOfWebServer(){

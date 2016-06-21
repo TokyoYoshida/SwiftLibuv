@@ -33,6 +33,7 @@ extension Respondable {
 
 class Responder : Respondable {
     var actioners = [URI:Actioner]()
+//    let cookies:    Cookies
 
     init (){
         respond()

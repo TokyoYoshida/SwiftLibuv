@@ -4,7 +4,6 @@
 #endif
 
 import Cuv
-import Foundation
 import HTTPParser
 
 

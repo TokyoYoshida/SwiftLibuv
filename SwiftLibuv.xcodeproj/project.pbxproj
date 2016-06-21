@@ -18,6 +18,7 @@
 		1E3B2CC31CDC51D300F04775 /* TcpListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B2CC21CDC51D300F04775 /* TcpListener.swift */; };
 		1E3B2CC51CDC520A00F04775 /* TcpSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B2CC41CDC520A00F04775 /* TcpSocket.swift */; };
 		1E3B2CD11CDC66B400F04775 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B2CD01CDC66B400F04775 /* Common.swift */; };
+		1E3E89A91D164CE000DC67CE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E89A81D164CE000DC67CE /* Data.swift */; };
 		1E593B121D0B8195007AC91F /* HttpServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E593B101D0B8195007AC91F /* HttpServerTests.swift */; };
 		1E593B131D0B8195007AC91F /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E593B111D0B8195007AC91F /* RouterTests.swift */; };
 		1E64D1991CE0FD60006FB58F /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64D1981CE0FD60006FB58F /* HttpServer.swift */; };
@@ -30,6 +31,8 @@
 		1EB92A9B1CFF08730063FC35 /* HttpResuestParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB92A9A1CFF08730063FC35 /* HttpResuestParser.swift */; };
 		1EDAB2561D01373D00C30FEE /* WebFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAB2551D01373D00C30FEE /* WebFramework.swift */; };
 		1EDAB2591D016EDD00C30FEE /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAB2581D016EDD00C30FEE /* URI.swift */; };
+		1EF74BE61D1598F500D01A2D /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF74BE51D1598F500D01A2D /* Cookies.swift */; };
+		1EF74BE81D15AD1B00D01A2D /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF74BE71D15AD1B00D01A2D /* Cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +64,7 @@
 		1E3B2CC21CDC51D300F04775 /* TcpListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TcpListener.swift; sourceTree = "<group>"; };
 		1E3B2CC41CDC520A00F04775 /* TcpSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TcpSocket.swift; sourceTree = "<group>"; };
 		1E3B2CD01CDC66B400F04775 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1E3E89A81D164CE000DC67CE /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1E593B101D0B8195007AC91F /* HttpServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpServerTests.swift; path = Tests/SwiftLibuv/HttpServerTests.swift; sourceTree = "<group>"; };
 		1E593B111D0B8195007AC91F /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterTests.swift; path = Tests/SwiftLibuv/RouterTests.swift; sourceTree = "<group>"; };
 		1E64D1671CE0F1D9006FB58F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		1EB92A9A1CFF08730063FC35 /* HttpResuestParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResuestParser.swift; sourceTree = "<group>"; };
 		1EDAB2551D01373D00C30FEE /* WebFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebFramework.swift; sourceTree = "<group>"; };
 		1EDAB2581D016EDD00C30FEE /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
+		1EF74BE51D1598F500D01A2D /* Cookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookies.swift; sourceTree = "<group>"; };
+		1EF74BE71D15AD1B00D01A2D /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		1E3B2CA01CDC516C00F04775 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1EF74BE41D1598C100D01A2D /* Cookie */,
 				1EDAB2541D0136A000C30FEE /* WebFramework */,
 				1E8270F31D0133DB0003A0EA /* Router */,
 				1E8270F41D0133E80003A0EA /* Responder */,
@@ -308,6 +315,7 @@
 				1E0B998A1D0AF01C00FC32B8 /* Result.swift */,
 				1E8F32701D09ADEE0033D4DA /* ErrorType.swift */,
 				1E9570101CE6279300B52F67 /* UVData.swift */,
+				1E3E89A81D164CE000DC67CE /* Data.swift */,
 				1E8270EA1D012E790003A0EA /* UVTypes.swift */,
 				1E3B2CD01CDC66B400F04775 /* Common.swift */,
 			);
@@ -378,6 +386,15 @@
 				1EDAB2581D016EDD00C30FEE /* URI.swift */,
 			);
 			name = URI;
+			sourceTree = "<group>";
+		};
+		1EF74BE41D1598C100D01A2D /* Cookie */ = {
+			isa = PBXGroup;
+			children = (
+				1EF74BE51D1598F500D01A2D /* Cookies.swift */,
+				1EF74BE71D15AD1B00D01A2D /* Cookie.swift */,
+			);
+			name = Cookie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8270EB1D012E790003A0EA /* UVTypes.swift in Sources */,
+				1EF74BE61D1598F500D01A2D /* Cookies.swift in Sources */,
 				1E00426B1CFF3D5B00F91132 /* HttpResponseSerializer.swift in Sources */,
 				1E8270F11D012F760003A0EA /* WebServer.swift in Sources */,
 				1E004F321CFF21AA00FF7055 /* StaticWebPage.swift in Sources */,
@@ -462,6 +480,7 @@
 				1E3B2CC11CDC518600F04775 /* Package.swift in Sources */,
 				1EDAB2591D016EDD00C30FEE /* URI.swift in Sources */,
 				1EB16C691CFDC57A004EA4AD /* Responder.swift in Sources */,
+				1E3E89A91D164CE000DC67CE /* Data.swift in Sources */,
 				1E040F641CDC899E00867199 /* TcpClient.swift in Sources */,
 				1E64D1991CE0FD60006FB58F /* HttpServer.swift in Sources */,
 				1E2530A11CFC7E0E00C451E1 /* Router.swift in Sources */,
@@ -470,6 +489,7 @@
 				1E593B131D0B8195007AC91F /* RouterTests.swift in Sources */,
 				1E8F32711D09ADEE0033D4DA /* ErrorType.swift in Sources */,
 				1E3B2CC51CDC520A00F04775 /* TcpSocket.swift in Sources */,
+				1EF74BE81D15AD1B00D01A2D /* Cookie.swift in Sources */,
 				1EDAB2561D01373D00C30FEE /* WebFramework.swift in Sources */,
 				1E3B2CD11CDC66B400F04775 /* Common.swift in Sources */,
 				1E25BC331CFC8E2E00E2FE9C /* LinuxMain.swift in Sources */,

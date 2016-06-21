@@ -65,35 +65,50 @@ class HttpServer : HttpServable {
             self.stream     = TcpStream(client: client)
         }
         
-        func doStartPhase(result: Result<TcpListenable>){
-            self.doReadPhase(result: result)
+        deinit {
+            print("deinit")
         }
         
-        private func doReadPhase(result: Result<TcpListenable>){
+        func doStartPhase(result: Result<TcpListenable>){
+            self.doListenResultPhase(result: result)
+        }
+        
+        private func doListenResultPhase(result: Result<TcpListenable>){
             switch result {
             case .success(_):
-                do {
-                    try client.read { result in
-                        self.doParsePhase(result: result)
-                    }
-                } catch (let error) {
-                    self.errorRespond(error: error)
-                }
+                self.doReadPhase()
             case .error(let error):
                 self.errorRespond(error: error)
             }
         }
         
-        private func doParsePhase(result: Result<UVData>){
-            switch result {
-            case .success(let data):
-                self.httpServer.parser.parse(readData: data.description){ request in
-                    if let response = self.callBack(request: request) {
-                        self.serialize(response: response)
+        private func doReadPhase(){
+            // uv_read_start keep a TCP session, but control will return soon
+            // because of the non-blocking. For this reason,
+            // _selfKeeper is private to hold until the session is close.
+            var _selfKeeper:HttpProcessor? = self
+            do {
+                try client.read { [unowned self] result in
+                    switch result {
+                    case .success(let data):
+                        self.doParsePhase(data: data)
+                    case let .error(error) where error is Closed:
+                        self.client.close()
+                        _selfKeeper = nil
+                    case .error(let error):
+                        self.errorRespond(error: error)
                     }
                 }
-            case .error(let error):
+            } catch (let error) {
                 self.errorRespond(error: error)
+            }
+        }
+        
+        private func doParsePhase(data: UVData){
+            self.httpServer.parser.parse(readData: data) { [unowned self] request in
+                if let response = self.callBack(request: request) {
+                    self.serialize(response: response)
+                }
             }
         }
 

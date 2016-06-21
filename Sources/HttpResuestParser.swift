@@ -3,7 +3,7 @@ import HTTPParser
 typealias ParsedCallBack = (request: Request) -> Void
 
 protocol HttpRequestParsable {
-    func parse(readData: String ,callBack: ParsedCallBack)
+    func parse(readData: UVData ,callBack: ParsedCallBack)
 }
 
 class HttpRequestParser : HttpRequestParsable {
@@ -13,7 +13,7 @@ class HttpRequestParser : HttpRequestParsable {
         readBuffer.initialize()
     }
     
-    func parse(readData: String ,callBack: ParsedCallBack) {
+    func parse(readData: UVData ,callBack: ParsedCallBack) {
         readBuffer.append(newData: readData)
         
         let parser = RequestParser()
@@ -24,18 +24,24 @@ class HttpRequestParser : HttpRequestParsable {
     }
 
     private class ReadBuffer {
-        var readStr = ""
+        var bufferData = Data()
 
-        func initialize(){
-            readStr = ""
+        var data:Data {
+            get {
+                return bufferData
+            }
         }
         
-        func append(newData: String){
-            readStr += newData
+        func initialize(){
+            bufferData = Data()
+        }
+        
+        func append(newData: UVData){
+            bufferData.append(buffer: newData.data)
         }
         
         func toData() -> Data {
-            return Data(readStr)
+            return bufferData
         }
     }
 }

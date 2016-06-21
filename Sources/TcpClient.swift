@@ -1,5 +1,4 @@
 import Cuv
-import Foundation
 import C7
 
 public typealias TcpReadCallback = (result: Result<UVData>) throws -> Void
@@ -108,6 +107,11 @@ extension TcpClient {
     }
     
     private func makeResult(bytesRead:Int ,buffer:UVBuffer) -> Result<UVData>{
+        guard bytesRead != Int(UV_EOF.rawValue) else {
+            let error = Closed()
+            return Result(error: error)
+        }
+
         guard bytesRead >= 0 else {
             let error = SwiftLibuvError.libuvError(errorNo: Int32(bytesRead))
             return Result(error: error)
