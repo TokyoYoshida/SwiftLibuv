@@ -14,6 +14,7 @@
 		1E0B998B1D0AF01C00FC32B8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B998A1D0AF01C00FC32B8 /* Result.swift */; };
 		1E2530A11CFC7E0E00C451E1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2530A01CFC7E0E00C451E1 /* Router.swift */; };
 		1E25BC331CFC8E2E00E2FE9C /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E25BC321CFC8E2E00E2FE9C /* LinuxMain.swift */; };
+		1E305E751D1D881800A4ABF6 /* Response+Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E305E741D1D881800A4ABF6 /* Response+Cookies.swift */; };
 		1E3B2CC11CDC518600F04775 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B2CC01CDC518600F04775 /* Package.swift */; };
 		1E3B2CC31CDC51D300F04775 /* TcpListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B2CC21CDC51D300F04775 /* TcpListener.swift */; };
 		1E3B2CC51CDC520A00F04775 /* TcpSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B2CC41CDC520A00F04775 /* TcpSocket.swift */; };
@@ -32,7 +33,6 @@
 		1EDAB2561D01373D00C30FEE /* WebFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAB2551D01373D00C30FEE /* WebFramework.swift */; };
 		1EDAB2591D016EDD00C30FEE /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAB2581D016EDD00C30FEE /* URI.swift */; };
 		1EF74BE61D1598F500D01A2D /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF74BE51D1598F500D01A2D /* Cookies.swift */; };
-		1EF74BE81D15AD1B00D01A2D /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF74BE71D15AD1B00D01A2D /* Cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +56,7 @@
 		1E2530A01CFC7E0E00C451E1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1E25BC321CFC8E2E00E2FE9C /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinuxMain.swift; path = Tests/LinuxMain.swift; sourceTree = "<group>"; };
 		1E25BC381CFC94C100E2FE9C /* SwiftLibuv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftLibuv; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E305E741D1D881800A4ABF6 /* Response+Cookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Cookies.swift"; sourceTree = "<group>"; };
 		1E3B2CA11CDC516C00F04775 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1E3B2CB21CDC517E00F04775 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		1E3B2CB31CDC517E00F04775 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -120,7 +121,6 @@
 		1EDAB2551D01373D00C30FEE /* WebFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebFramework.swift; sourceTree = "<group>"; };
 		1EDAB2581D016EDD00C30FEE /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
 		1EF74BE51D1598F500D01A2D /* Cookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookies.swift; sourceTree = "<group>"; };
-		1EF74BE71D15AD1B00D01A2D /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,7 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				1EF74BE51D1598F500D01A2D /* Cookies.swift */,
-				1EF74BE71D15AD1B00D01A2D /* Cookie.swift */,
+				1E305E741D1D881800A4ABF6 /* Response+Cookies.swift */,
 			);
 			name = Cookie;
 			sourceTree = "<group>";
@@ -489,9 +489,9 @@
 				1E593B131D0B8195007AC91F /* RouterTests.swift in Sources */,
 				1E8F32711D09ADEE0033D4DA /* ErrorType.swift in Sources */,
 				1E3B2CC51CDC520A00F04775 /* TcpSocket.swift in Sources */,
-				1EF74BE81D15AD1B00D01A2D /* Cookie.swift in Sources */,
 				1EDAB2561D01373D00C30FEE /* WebFramework.swift in Sources */,
 				1E3B2CD11CDC66B400F04775 /* Common.swift in Sources */,
+				1E305E751D1D881800A4ABF6 /* Response+Cookies.swift in Sources */,
 				1E25BC331CFC8E2E00E2FE9C /* LinuxMain.swift in Sources */,
 				1E593B121D0B8195007AC91F /* HttpServerTests.swift in Sources */,
 				1E00426D1CFF42DD00F91132 /* TcpStream.swift in Sources */,

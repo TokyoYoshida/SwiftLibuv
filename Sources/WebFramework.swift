@@ -10,7 +10,7 @@ class WebFrameWork {
     private let router =       Router()
     private let httpServer:    HttpServable
     private let errorCallBack: ErrorCallBack
-
+    
     init(errorCallBack: ErrorCallBack) {
         self.errorCallBack = errorCallBack
         let socket =      TcpSocket()

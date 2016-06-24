@@ -12,13 +12,11 @@ class MyResponder : Responder {
         }
 
         get(uri: URI(byPath:"/cookie")) {request in
-            print(request.headers["Cookie"].values)
-//            let cookieValue = request.headers["Cookie"].values ?? ""
-            var response = Response(body: Data("cookie value"))
-            response.headers["Set-Cookie"] = "test=ok"//Header(response.cookies.map { "\($0)=\($1)" }.joined(separator: ";"))
+            self.cookies["testCookie"] = "testValue"
+            let response = Response(body: Data("cookie value"))
             return response
         }
-}
+    }
 }
 
 func exampleOfWebServer(){

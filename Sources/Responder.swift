@@ -4,7 +4,8 @@ typealias Actioner = (request:Request) -> Response?
 
 protocol Respondable: class  {
     func respond()
-    var actioners:[URI:Actioner] { get set }
+    var actioners: [URI:Actioner] { get set }
+    var cookies:   Cookies        { get }
 }
 
 extension Respondable {
@@ -25,15 +26,16 @@ extension Respondable {
             return nil
         }
 
-        let response = actioner (request: request)
-        
+        var response = actioner (request: request)
+        response?.setCookies(cookies: cookies)
+
         return response
     }
 }
 
 class Responder : Respondable {
     var actioners = [URI:Actioner]()
-//    let cookies:    Cookies
+    let cookies   = Cookies()
 
     init (){
         respond()
