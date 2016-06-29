@@ -13,6 +13,7 @@ class MyResponder : Responder {
 
         get(uri: URI(byPath:"/cookie")) {request in
             self.cookies["testCookie"] = "testValue"
+            self.cookies["testCookie"]?.maxAge = 1
             let response = Response(body: Data("cookie value"))
             return response
         }

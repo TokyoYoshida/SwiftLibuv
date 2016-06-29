@@ -94,7 +94,9 @@ class HttpServer : HttpServable {
                         self.doParsePhase(data: data)
                     case let .error(error) where error is Closed:
                         self.client.close()
-                        _selfKeeper = nil
+                        defer {
+                            _selfKeeper = nil
+                        }
                     case .error(let error):
                         self.errorRespond(error: error)
                     }

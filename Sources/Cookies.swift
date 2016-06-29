@@ -3,16 +3,16 @@ import HTTP
 class Cookies {
     private var cookies = Dictionary<String, AttributedCookie>()
     
-    subscript(name: String) -> String? {
+    subscript(name: String) -> AttributedCookie? {
         get {
-            return cookies[name]?.value
+            return cookies[name]
         }
         set(newValue){
-            guard let newValue = newValue else {
+            guard var newValue = newValue else {
                 return
             }
-            let cookie = AttributedCookie(name: name, value: newValue)
-            cookies[name] = cookie
+            newValue.name = name
+            cookies[name] = newValue
         }
     }
 

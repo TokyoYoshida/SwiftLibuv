@@ -30,6 +30,7 @@
 		1E9570111CE6279300B52F67 /* UVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9570101CE6279300B52F67 /* UVData.swift */; };
 		1EB16C691CFDC57A004EA4AD /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB16C681CFDC57A004EA4AD /* Responder.swift */; };
 		1EB92A9B1CFF08730063FC35 /* HttpResuestParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB92A9A1CFF08730063FC35 /* HttpResuestParser.swift */; };
+		1ED83BAD1D24075800A306B9 /* AttributedCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED83BAC1D24075800A306B9 /* AttributedCookie.swift */; };
 		1EDAB2561D01373D00C30FEE /* WebFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAB2551D01373D00C30FEE /* WebFramework.swift */; };
 		1EDAB2591D016EDD00C30FEE /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAB2581D016EDD00C30FEE /* URI.swift */; };
 		1EF74BE61D1598F500D01A2D /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF74BE51D1598F500D01A2D /* Cookies.swift */; };
@@ -118,6 +119,7 @@
 		1E9570101CE6279300B52F67 /* UVData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UVData.swift; sourceTree = "<group>"; };
 		1EB16C681CFDC57A004EA4AD /* Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
 		1EB92A9A1CFF08730063FC35 /* HttpResuestParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResuestParser.swift; sourceTree = "<group>"; };
+		1ED83BAC1D24075800A306B9 /* AttributedCookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedCookie.swift; sourceTree = "<group>"; };
 		1EDAB2551D01373D00C30FEE /* WebFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebFramework.swift; sourceTree = "<group>"; };
 		1EDAB2581D016EDD00C30FEE /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
 		1EF74BE51D1598F500D01A2D /* Cookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookies.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				1EF74BE51D1598F500D01A2D /* Cookies.swift */,
 				1E305E741D1D881800A4ABF6 /* Response+Cookies.swift */,
+				1ED83BAC1D24075800A306B9 /* AttributedCookie.swift */,
 			);
 			name = Cookie;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				1E3B2CC51CDC520A00F04775 /* TcpSocket.swift in Sources */,
 				1EDAB2561D01373D00C30FEE /* WebFramework.swift in Sources */,
 				1E3B2CD11CDC66B400F04775 /* Common.swift in Sources */,
+				1ED83BAD1D24075800A306B9 /* AttributedCookie.swift in Sources */,
 				1E305E751D1D881800A4ABF6 /* Response+Cookies.swift in Sources */,
 				1E25BC331CFC8E2E00E2FE9C /* LinuxMain.swift in Sources */,
 				1E593B121D0B8195007AC91F /* HttpServerTests.swift in Sources */,
